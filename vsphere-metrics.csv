@@ -1,0 +1,134 @@
+Object Type,Metric Group,Metric Name,Rollup,Stats Type,Unit,Level,Summary
+Virtual Machine,cpu,usage,average,rate,percent,1,CPU usage as a percentage during the interval
+Virtual Machine,cpu,usagemhz,average,rate,megaHertz,1,CPU usage in megahertz during the interval
+Virtual Machine,cpu,ready,summation,delta,millisecond,1,"Time that the virtual machine was ready, but could not get scheduled to run on the physical CPU during last measurement interval"
+Virtual Machine,mem,usage,average,absolute,percent,1,Percentage of host physical memory that has been consumed
+Virtual Machine,mem,swapinRate,average,rate,kiloBytesPerSecond,1,Rate at which guest physical memory is swapped in from the swap space
+Virtual Machine,mem,swapoutRate,average,rate,kiloBytesPerSecond,1,Rate at which guest physical memory is swapped out to the swap space
+Virtual Machine,mem,vmmemctl,average,absolute,kiloBytes,1,Amount of guest physical memory reclaimed from the virtual machine by the balloon driver in the guest
+Virtual Machine,mem,consumed,average,absolute,kiloBytes,1,Amount of host physical memory consumed for backing up guest physical memory pages
+Virtual Machine,mem,overhead,average,absolute,kiloBytes,1,Host physical memory consumed by ESXi data structures for running the virtual machines
+Virtual Machine,disk,usage,average,rate,kiloBytesPerSecond,1,usage
+Virtual Machine,disk,maxTotalLatency,latest,absolute,millisecond,1,maxTotalLatency
+Virtual Machine,net,usage,average,rate,kiloBytesPerSecond,1,Network utilization (combined transmit-rates and receive-rates) during the interval
+Virtual Machine,sys,uptime,latest,absolute,second,1,"Total time elapsed, in seconds, since last system startup"
+Virtual Machine,clusterServices,vmDrsScore,latest,absolute,percent,1,DRS score of the virtual machine
+Virtual Machine,disk,used,latest,absolute,kiloBytes,1,used
+Virtual Machine,disk,provisioned,latest,absolute,kiloBytes,1,provisioned
+Virtual Machine,disk,unshared,latest,absolute,kiloBytes,1,unshared
+Host System,cpu,usage,average,rate,percent,1,CPU usage as a percentage during the interval
+Host System,cpu,usagemhz,average,rate,megaHertz,1,CPU usage in megahertz during the interval
+Host System,cpu,ready,summation,delta,millisecond,1,"Time that the virtual machine was ready, but could not get scheduled to run on the physical CPU during last measurement interval"
+Host System,mem,usage,average,absolute,percent,1,Percentage of host physical memory that has been consumed
+Host System,mem,swapinRate,average,rate,kiloBytesPerSecond,1,Rate at which guest physical memory is swapped in from the swap space
+Host System,mem,swapoutRate,average,rate,kiloBytesPerSecond,1,Rate at which guest physical memory is swapped out to the swap space
+Host System,mem,vmmemctl,average,absolute,kiloBytes,1,Amount of guest physical memory reclaimed from the virtual machine by the balloon driver in the guest
+Host System,mem,consumed,average,absolute,kiloBytes,1,Amount of host physical memory consumed for backing up guest physical memory pages
+Host System,mem,overhead,average,absolute,kiloBytes,1,Host physical memory consumed by ESXi data structures for running the virtual machines
+Host System,mem,bandwidth.total,latest,absolute,megaBytesPerSecond,1,Total read and write bandwidth of this memory type
+Host System,disk,usage,average,rate,kiloBytesPerSecond,1,usage
+Host System,disk,maxTotalLatency,latest,absolute,millisecond,1,maxTotalLatency
+Host System,net,usage,average,rate,kiloBytesPerSecond,1,Network utilization (combined transmit-rates and receive-rates) during the interval
+Host System,sys,uptime,latest,absolute,second,1,"Total time elapsed, in seconds, since last system startup"
+Host System,clusterServices,cpufairness,latest,absolute,number,1,Fairness of distributed CPU resource allocation
+Host System,clusterServices,memfairness,latest,absolute,number,1,Aggregate available memory resources of all the hosts within a cluster
+Cluster Compute Resource,cpu,usage,average,rate,percent,1,CPU usage as a percentage during the interval
+Cluster Compute Resource,cpu,usagemhz,average,rate,megaHertz,1,CPU usage in megahertz during the interval
+Cluster Compute Resource,mem,usage,average,absolute,percent,1,Percentage of host physical memory that has been consumed
+Cluster Compute Resource,mem,vmmemctl,average,absolute,kiloBytes,1,Amount of guest physical memory reclaimed from the virtual machine by the balloon driver in the guest
+Cluster Compute Resource,mem,consumed,average,absolute,kiloBytes,1,Amount of host physical memory consumed for backing up guest physical memory pages
+Cluster Compute Resource,mem,overhead,average,absolute,kiloBytes,1,Host physical memory consumed by ESXi data structures for running the virtual machines
+Cluster Compute Resource,vmop,numPoweron,latest,absolute,number,1,Number of virtual machine power on operations
+Cluster Compute Resource,vmop,numPoweroff,latest,absolute,number,1,Number of virtual machine power off operations
+Cluster Compute Resource,vmop,numSuspend,latest,absolute,number,1,Number of virtual machine suspend operations
+Cluster Compute Resource,vmop,numReset,latest,absolute,number,1,Number of virtual machine reset operations
+Cluster Compute Resource,vmop,numRebootGuest,latest,absolute,number,1,Number of virtual machine guest reboot operations
+Cluster Compute Resource,vmop,numStandbyGuest,latest,absolute,number,1,Number of virtual machine standby guest operations
+Cluster Compute Resource,vmop,numShutdownGuest,latest,absolute,number,1,Number of virtual machine guest shutdown operations
+Cluster Compute Resource,vmop,numCreate,latest,absolute,number,1,Number of virtual machine create operations
+Cluster Compute Resource,vmop,numDestroy,latest,absolute,number,1,Number of virtual machine delete operations
+Cluster Compute Resource,vmop,numRegister,latest,absolute,number,1,Number of virtual machine register operations
+Cluster Compute Resource,vmop,numUnregister,latest,absolute,number,1,Number of virtual machine unregister operations
+Cluster Compute Resource,vmop,numReconfigure,latest,absolute,number,1,Number of virtual machine reconfigure operations
+Cluster Compute Resource,vmop,numClone,latest,absolute,number,1,Number of virtual machine clone operations
+Cluster Compute Resource,vmop,numDeploy,latest,absolute,number,1,Number of virtual machine template deploy operations
+Cluster Compute Resource,vmop,numChangeHost,latest,absolute,number,1,Number of host change operations for powered-off and suspended VMs
+Cluster Compute Resource,vmop,numChangeDS,latest,absolute,number,1,Number of datastore change operations for powered-off and suspended virtual machines
+Cluster Compute Resource,vmop,numChangeHostDS,latest,absolute,number,1,Number of host and datastore change operations for powered-off and suspended virtual machines
+Cluster Compute Resource,vmop,numVMotion,latest,absolute,number,1,Number of migrations with vMotion (host change operations for powered-on VMs)
+Cluster Compute Resource,vmop,numSVMotion,latest,absolute,number,1,Number of migrations with Storage vMotion (datastore change operations for powered-on VMs)
+Cluster Compute Resource,vmop,numXVMotion,latest,absolute,number,1,Number of host and datastore change operations for powered-on and suspended virtual machines
+Cluster Compute Resource,clusterServices,effectivecpu,average,rate,megaHertz,1,Total available CPU resources of all hosts within a cluster
+Cluster Compute Resource,clusterServices,effectivemem,average,absolute,megaBytes,1,Total amount of machine memory of all hosts in the cluster that is available for use for virtual machine memory and overhead memory
+Cluster Compute Resource,cpu,totalmhz,average,rate,megaHertz,1,Total amount of CPU resources of all hosts in the cluster
+Cluster Compute Resource,mem,totalmb,average,absolute,megaBytes,1,Total amount of host physical memory of all hosts in the cluster that is available for virtual machine memory (physical memory for use by the guest OS) and virtual machine overhead memory
+Cluster Compute Resource,clusterServices,clusterDrsScore,latest,absolute,percent,1,DRS score of the cluster
+Cluster Compute Resource,clusterServices,failover,latest,absolute,number,1,vSphere HA number of failures that can be tolerated
+Cluster Compute Resource,gpu,utilization,average,absolute,percent,1,The compute utilization of a GPU in percentage
+Cluster Compute Resource,gpu,mem.used,average,absolute,kiloBytes,1,The amount of GPU memory used by workloads in kilobytes
+Cluster Compute Resource,gpu,mem.reserved,latest,absolute,kiloBytes,1,The amount of GPU memory consumed by virtual GPUs in kilobytes
+Cluster Compute Resource,gpu,power.used,latest,absolute,watt,1,The power used by a GPU in watts
+Cluster Compute Resource,gpu,temperature,average,absolute,celsius,1,The temperature of a GPU in degrees Celsius
+Cluster Compute Resource,gpu,mem.total,latest,absolute,kiloBytes,1,The total amount of GPU memory in kilobytes
+Datastore,disk,numberReadAveraged,average,rate,number,1,numberReadAveraged
+Datastore,disk,numberWriteAveraged,average,rate,number,1,numberWriteAveraged
+Datastore,datastore,numberReadAveraged,average,rate,number,1,Average number of read commands issued per second to the datastore during the collection interval
+Datastore,datastore,numberWriteAveraged,average,rate,number,1,Average number of write commands issued per second to the datastore during the collection interval
+Datastore,disk,used,latest,absolute,kiloBytes,1,used
+Datastore,disk,provisioned,latest,absolute,kiloBytes,1,provisioned
+Datastore,disk,capacity,latest,absolute,kiloBytes,1,capacity
+Datastore,disk,unshared,latest,absolute,kiloBytes,1,unshared
+Resource Pool,cpu,usagemhz,average,rate,megaHertz,1,CPU usage in megahertz during the interval
+Resource Pool,mem,vmmemctl,average,absolute,kiloBytes,1,Amount of guest physical memory reclaimed from the virtual machine by the balloon driver in the guest
+Resource Pool,mem,consumed,average,absolute,kiloBytes,1,Amount of host physical memory consumed for backing up guest physical memory pages
+Resource Pool,mem,overhead,average,absolute,kiloBytes,1,Host physical memory consumed by ESXi data structures for running the virtual machines
+Resource Pool,gpu,utilization,average,absolute,percent,1,The compute utilization of a GPU in percentage
+Resource Pool,gpu,mem.used,average,absolute,kiloBytes,1,The amount of GPU memory used by workloads in kilobytes
+Resource Pool,gpu,mem.reserved,latest,absolute,kiloBytes,1,The amount of GPU memory consumed by virtual GPUs in kilobytes
+Resource Pool,gpu,power.used,latest,absolute,watt,1,The power used by a GPU in watts
+Resource Pool,gpu,temperature,average,absolute,celsius,1,The temperature of a GPU in degrees Celsius
+Resource Pool,gpu,mem.total,latest,absolute,kiloBytes,1,The total amount of GPU memory in kilobytes
+Datacenter,vmop,numPoweron,latest,absolute,number,1,Number of virtual machine power on operations
+Datacenter,vmop,numPoweroff,latest,absolute,number,1,Number of virtual machine power off operations
+Datacenter,vmop,numSuspend,latest,absolute,number,1,Number of virtual machine suspend operations
+Datacenter,vmop,numReset,latest,absolute,number,1,Number of virtual machine reset operations
+Datacenter,vmop,numRebootGuest,latest,absolute,number,1,Number of virtual machine guest reboot operations
+Datacenter,vmop,numStandbyGuest,latest,absolute,number,1,Number of virtual machine standby guest operations
+Datacenter,vmop,numShutdownGuest,latest,absolute,number,1,Number of virtual machine guest shutdown operations
+Datacenter,vmop,numCreate,latest,absolute,number,1,Number of virtual machine create operations
+Datacenter,vmop,numDestroy,latest,absolute,number,1,Number of virtual machine delete operations
+Datacenter,vmop,numRegister,latest,absolute,number,1,Number of virtual machine register operations
+Datacenter,vmop,numUnregister,latest,absolute,number,1,Number of virtual machine unregister operations
+Datacenter,vmop,numReconfigure,latest,absolute,number,1,Number of virtual machine reconfigure operations
+Datacenter,vmop,numClone,latest,absolute,number,1,Number of virtual machine clone operations
+Datacenter,vmop,numDeploy,latest,absolute,number,1,Number of virtual machine template deploy operations
+Datacenter,vmop,numChangeHost,latest,absolute,number,1,Number of host change operations for powered-off and suspended VMs
+Datacenter,vmop,numChangeDS,latest,absolute,number,1,Number of datastore change operations for powered-off and suspended virtual machines
+Datacenter,vmop,numChangeHostDS,latest,absolute,number,1,Number of host and datastore change operations for powered-off and suspended virtual machines
+Datacenter,vmop,numVMotion,latest,absolute,number,1,Number of migrations with vMotion (host change operations for powered-on VMs)
+Datacenter,vmop,numSVMotion,latest,absolute,number,1,Number of migrations with Storage vMotion (datastore change operations for powered-on VMs)
+Datacenter,vmop,numXVMotion,latest,absolute,number,1,Number of host and datastore change operations for powered-on and suspended virtual machines
+Distributed Virtual Switch,net,throughput.pktsTx,average,absolute,number,3,The rate of transmitted packets for this VDS
+Distributed Virtual Switch,net,throughput.pktsTxMulticast,average,absolute,number,3,The rate of transmitted Multicast packets for this VDS
+Distributed Virtual Switch,net,throughput.pktsTxBroadcast,average,absolute,number,3,The rate of transmitted Broadcast packets for this VDS
+Distributed Virtual Switch,net,throughput.pktsRx,average,absolute,number,3,The rate of received packets for this vDS
+Distributed Virtual Switch,net,throughput.pktsRxMulticast,average,absolute,number,3,The rate of received Multicast packets for this VDS
+Distributed Virtual Switch,net,throughput.pktsRxBroadcast,average,absolute,number,3,The rate of received Broadcast packets for this VDS
+Distributed Virtual Switch,net,throughput.droppedTx,average,absolute,number,3,Count of dropped transmitted packets for this VDS
+Distributed Virtual Switch,net,throughput.droppedRx,average,absolute,number,3,Count of dropped received packets for this VDS
+Distributed Virtual Switch,net,throughput.vds.pktsTx,average,absolute,number,3,The rate of transmitted packets for this DVPort
+Distributed Virtual Switch,net,throughput.vds.pktsTxMcast,average,absolute,number,3,The rate of transmitted multicast packets for this DVPort
+Distributed Virtual Switch,net,throughput.vds.pktsTxBcast,average,absolute,number,3,The rate of transmitted broadcast packets for this DVPort
+Distributed Virtual Switch,net,throughput.vds.pktsRx,average,absolute,number,3,The rate of received packets for this DVPort
+Distributed Virtual Switch,net,throughput.vds.pktsRxMcast,average,absolute,number,3,The rate of received multicast packets for this DVPort
+Distributed Virtual Switch,net,throughput.vds.pktsRxBcast,average,absolute,number,3,The rate of received broadcast packets for this DVPort
+Distributed Virtual Switch,net,throughput.vds.droppedTx,average,absolute,number,3,Count of dropped transmitted packets for this DVPort
+Distributed Virtual Switch,net,throughput.vds.droppedRx,average,absolute,number,3,Count of dropped received packets for this DVPort
+Distributed Virtual Switch,net,throughput.vds.lagTx,average,absolute,number,3,The rate of transmitted packets for this LAG
+Distributed Virtual Switch,net,throughput.vds.lagTxMcast,average,absolute,number,3,The rate of transmitted Multicast packets for this LAG
+Distributed Virtual Switch,net,throughput.vds.lagTxBcast,average,absolute,number,3,The rate of transmitted Broadcast packets for this LAG
+Distributed Virtual Switch,net,throughput.vds.lagRx,average,absolute,number,3,The rate of received packets for this LAG
+Distributed Virtual Switch,net,throughput.vds.lagRxMcast,average,absolute,number,3,The rate of received multicast packets for this LAG
+Distributed Virtual Switch,net,throughput.vds.lagRxBcast,average,absolute,number,3,The rate of received Broadcast packets for this LAG
+Distributed Virtual Switch,net,throughput.vds.lagDropTx,average,absolute,number,3,Count of dropped transmitted packets for this LAG
+Distributed Virtual Switch,net,throughput.vds.lagDropRx,average,absolute,number,3,Count of dropped received packets for this LAG
