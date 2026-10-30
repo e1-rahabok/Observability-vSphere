@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vSphere Metrics CSV Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>vSphere Metrics CSV Viewer</h1>
+          <p class="subtitle">Basic filtering, sorting, and column visibility controls</p>
+        </div>
+        <button id="resetButton" class="secondary-button">Reset</button>
+      </header>
+
+      <section class="controls">
+        <div class="control-group search-group">
+          <label for="globalSearch">Search all columns</label>
+          <input id="globalSearch" type="text" placeholder="Filter rows..." />
+        </div>
+
+        <div class="control-group filter-group">
+          <label for="columnFilter">Filter by column</label>
+          <select id="columnFilter"></select>
+        </div>
+
+        <div class="control-group filter-group">
+          <label for="filterValue">Filter value</label>
+          <input id="filterValue" type="text" placeholder="Exact or partial match" />
+        </div>
+      </section>
+
+      <section class="column-toggle-panel">
+        <h2>Visible columns</h2>
+        <div id="columnToggles" class="column-toggles"></div>
+      </section>
+
+      <div class="status-bar">
+        <span id="rowCount">0 rows</span>
+      </div>
+
+      <div class="table-wrap">
+        <table id="dataTable">
+          <thead id="tableHead"></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
