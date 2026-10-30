@@ -4,6 +4,21 @@
 
 [vsphere-metrics.csv](vsphere-metrics.csv) lists the vCenter performance counters for each object type, one row per counter.
 
+## Browser CSV viewer
+
+The repository includes a simple browser-based CSV viewer that lets you:
+
+- search across all columns
+- filter by a selected column
+- sort by clicking any column header
+- show or hide columns
+
+Open the site here:
+
+- https://e1-rahabok.github.io/Observability-vSphere/
+
+This is a lightweight spreadsheet-like view for the CSV, intended for quick inspection without installing Excel or another desktop app.
+
 | Column | Meaning |
 |---|---|
 | Object Type | vSphere managed object type, for example Virtual Machine |
@@ -19,7 +34,7 @@ Source: `PerformanceManager.perfCounter` and `QueryAvailablePerfMetric`, from vC
 
 ### Object types without metrics in this list
 
-- **vApp** (`vim.VirtualApp`) and **Datastore Cluster** (`vim.StoragePod`) are not in the CSV. The vCenter performance API returns counters per entity, so it can only report metrics for an object that exists. The test inventory had no vApp or Datastore Cluster, so their metrics are unknown. They need an instance to be queried.
+- **vApp** (`vim.VirtualApp`) and **Datastore Cluster** (`vim.StoragePod`) are not in the CSV. The vCenter performance API returns counters per entity, so it can only report metrics for an object kind that exists in the inventory.
 
 ### Other notes
 
